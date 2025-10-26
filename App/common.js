@@ -915,7 +915,7 @@ function contextMenus (enabled, cmDownPanel){
 			browser.storage.local.get(config.command.guess, item => {
 				if (d.reason == "update" && item.chgLog == true){
 					browser.tabs.create({
-						url: "https://github.com/RossWang/Aria2-Integration/blob/master/CHANGELOG.md"
+						url: "https://github.com/Maskeva/Aria2-Integration-plus/blob/master/CHANGELOG.md"
 					});
 				}
 			});

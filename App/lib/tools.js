@@ -47,11 +47,11 @@ function monitor(options, gid) {
 				}
 				else if (e.data[0] == "badge" && item.badge){
 					if(e.data[1] == 0){
-						browser.action.setBadgeText({text: ""});
+						browser.browserAction.setBadgeText({text: ""});
 						mon = null;
 					}
 					else {
-						browser.action.setBadgeText({text: e.data[1].toString()});
+						browser.browserAction.setBadgeText({text: e.data[1].toString()});
 					}
 				}
 				else if (e.data[0] == "error"){
@@ -151,8 +151,8 @@ function downloadPanel(d) {
 				left: item1.dpLeft,
 				url: "data/DownloadPanel/index.html",
 				type: "popup",
-				width: 412 + parseInt((screen.width / 5000) * parseInt(item1.dpWidth || 0)),
-				height: 200 + parseInt(33 * window.devicePixelRatio + (screen.height / 5000) * parseInt(item1.dpHeight || 0)) ,
+				width: 425 + parseInt((screen.width / 5000) * parseInt(item1.dpWidth || 0)),
+				height: 265 + parseInt(33 * window.devicePixelRatio + (screen.height / 5000) * parseInt(item1.dpHeight || 0)) ,
 				incognito: windowInfo.incognito,
 				//titlePreface: "Aria2",
 				//state: "fullscreen",
@@ -165,9 +165,9 @@ function downloadPanel(d) {
 								focused: true,
 								top: item1.dpTop,
 								left: item1.dpLeft,
-								width: parseInt(412 * zoomChangeInfo.newZoomFactor * item.zoom 
+								width: parseInt(425 * zoomChangeInfo.newZoomFactor * item.zoom 
 													+ (screen.width / 5000) * parseInt(item1.dpWidth || 0)),
-								height: parseInt(200 * zoomChangeInfo.newZoomFactor * item.zoom
+								height: parseInt(265 * zoomChangeInfo.newZoomFactor * item.zoom
 													+ 33 * window.devicePixelRatio 
 													+ (screen.height / 5000) * parseInt(item1.dpHeight || 0)),
 							});

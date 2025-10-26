@@ -1,3 +1,17 @@
+## [0.4.6](https://github.com/RossWang/Aria2-Integration/compare/0.4.5...0.4.6) (2025-10-26)
+
+
+### Bug Fixes
+
+* fix new api ,update manifest_version 2 to 3
+
+
+### Features
+
+* update AriaNg to 1.3.11
+
+
+
 ## [0.4.5](https://github.com/RossWang/Aria2-Integration/compare/0.4.4...0.4.5) (2019-06-14)
 
 
