@@ -53,9 +53,9 @@ function restore() {
 		document.getElementById('shut').checked = prefs.shutdown;
 		document.getElementById('aggre').checked = prefs.aggressive;
 		document.getElementById('winLoc').checked = prefs.windowLoc;
-		document.getElementById('auto').checked = prefs.auto;
+		document.getElementById('auto').checked = false;
 		document.getElementById('autoSet').checked = prefs.autoSet;
-		document.getElementById('chgLog').checked = prefs.chgLog;
+		document.getElementById('chgLog').checked = false;
 		document.getElementById('badge').checked = prefs.badge;
 		document.getElementById('cmDownPanel').checked = prefs.cmDownPanel;
 		document.getElementById('downPanel').checked = prefs.downPanel;

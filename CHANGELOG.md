@@ -1,4 +1,12 @@
-## [0.4.6](https://github.com/RossWang/Aria2-Integration/compare/0.4.5...0.4.6) (2025-10-26)
+## [0.4.7] (2025-10-27)
+
+
+### Bug Fixes
+
+* Fix download window size
+
+
+## [0.4.6] (2025-10-26)
 
 
 ### Bug Fixes
