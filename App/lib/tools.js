@@ -47,11 +47,11 @@ function monitor(options, gid) {
 				}
 				else if (e.data[0] == "badge" && item.badge){
 					if(e.data[1] == 0){
-						browser.browserAction.setBadgeText({text: ""});
+						browser.action.setBadgeText({text: ""});
 						mon = null;
 					}
 					else {
-						browser.browserAction.setBadgeText({text: e.data[1].toString()});
+						browser.action.setBadgeText({text: e.data[1].toString()});
 					}
 				}
 				else if (e.data[0] == "error"){

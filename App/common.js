@@ -759,7 +759,7 @@ function changeState(enabled) {
 			enabled: false
 		});
 	}
-	browser.browserAction.setIcon({
+	browser.action.setIcon({
 		path: {
 			'16': 'data/icons/' + (enabled ? '' : 'disabled/') + '16.png',
 			'32': 'data/icons/' + (enabled ? '' : 'disabled/') + '32.png',
@@ -768,7 +768,7 @@ function changeState(enabled) {
 			'256': 'data/icons/' + (enabled ? '' : 'disabled/') + '256.png',
 		}
 	});
-	browser.browserAction.setTitle({
+	browser.action.setTitle({
 		title: browser.i18n.getMessage("extensionName") + 
 		` "${enabled ? browser.i18n.getMessage("enabled") : browser.i18n.getMessage("disabled")}"`
 	});
@@ -940,7 +940,7 @@ function loadSettings() {
 	browser.storage.local.get("enabled", function(item) {
 		changeState(item.enabled);
 	});
-	browser.browserAction.setBadgeBackgroundColor({color: [0,0,0,100]});
+	browser.action.setBadgeBackgroundColor({color: [0,0,0,100]});
 	loadSettings();
 	browser.runtime.onMessage.addListener(handleMessage);
 })();
